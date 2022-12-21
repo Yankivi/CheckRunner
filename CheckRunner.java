@@ -19,10 +19,6 @@ public class CheckRunner {
             fr.close();
             data = fileData.split(" ");
         }
-        else
-        {
-            System.out.println("Enter parameters");
-        }
         // получаем все товары в виде массива
         // где [0] - id товара
         // [1] - количество товаров
@@ -80,7 +76,7 @@ public class CheckRunner {
         List<String> linesForPrint = new ArrayList<>();
         String lineForPrint = new String();
         lineForPrint = String.format("%-5s %-15s %-9s %-10s \n", "QTY", "Description", "Price", "Total");
-        System.out.println(lineForPrint);
+        System.out.print(lineForPrint);
         linesForPrint.add(lineForPrint);
         lineForPrint = String.format("-".repeat(39) + "\n");
         System.out.print(lineForPrint);
